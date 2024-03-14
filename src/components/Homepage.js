@@ -6,8 +6,8 @@ const Homepage = () => {
   const [jokes, setJokes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(true); // State to track user's login status
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const navigate = useNavigate();
 
   // Function to fetch jokes
   const fetchJokes = async () => {
@@ -28,7 +28,7 @@ const Homepage = () => {
   };
 
   useEffect(() => {
-    let isMounted = true; // Variable to track if component is still mounted
+    let isMounted = true;
 
     // Fetch jokes only if the component is still mounted
     if (isMounted) {
@@ -37,7 +37,7 @@ const Homepage = () => {
 
     // Cleanup function to unfetch jokes when the component unmounts
     return () => {
-      isMounted = false; // Set isMounted to false when component unmounts
+      isMounted = false;
       setJokes([]);
     };
   }, []);
@@ -51,14 +51,14 @@ const Homepage = () => {
   // Function to handle logging out
   const handleLogout = () => {
     // Perform logout actions here
-    setIsLoggedIn(false); // Update isLoggedIn state to false
-    navigate("/"); // Use navigate to redirect to the login page
+    setIsLoggedIn(false);
+    navigate("/");
   };
 
   // Redirect to login page if user is not logged in
   if (!isLoggedIn) {
     navigate("/");
-    return null; // Return null to prevent rendering of HomePage content
+    return null;
   }
 
   return (
