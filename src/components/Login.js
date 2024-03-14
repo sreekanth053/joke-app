@@ -10,7 +10,7 @@ const Login = ({ isLoggedIn, handleLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Dummy validation
-    if (username === "sree" && password === "sree123") {
+    if (username === "sreekanth" && password === "sreekanth123") {
       handleLogin();
     } else {
       setError("Invalid username or password");
@@ -29,6 +29,7 @@ const Login = ({ isLoggedIn, handleLogin }) => {
               type="text"
               className="form-control username-input"
               value={username}
+              placeholder="sreekanth"
               onChange={(e) => setUsername(e.target.value)}
               required
             />
@@ -39,6 +40,7 @@ const Login = ({ isLoggedIn, handleLogin }) => {
               type="password"
               className="form-control password-input"
               value={password}
+              placeholder="sreekanth123"
               onChange={(e) => setPassword(e.target.value)}
               required
             />
