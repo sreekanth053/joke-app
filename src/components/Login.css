@@ -1,0 +1,75 @@
+/* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.login-heading{
+  text-align: center;
+}
+
+.error-msg{
+  color: red;
+  text-align: center;
+  margin: 10px;
+}
+
+.username-container{
+  margin: 25px;
+}
+
+.username-lable{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.username-input{
+  height: 30px;
+  margin: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.passowrd-container{
+  margin: 25px;
+}
+
+.password-lable{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.password-input{
+  height: 30px;
+  margin-left: 16px;
+  padding-left: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.btn-primary{
+  background-color: #379dfc;
+  color: #ffff;
+  height: 35px;
+  width: 80px;
+  border: 0;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}

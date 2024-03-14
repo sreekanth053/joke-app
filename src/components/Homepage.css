@@ -1,0 +1,39 @@
+.table-container{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.column-name{
+  color: #ffff;
+  background-color: black;
+}
+
+.row-name{
+  flex-wrap: wrap;
+}
+
+.button-primary{
+  background-color: #379dfc;
+  color: #ffff;
+  height: 35px;
+  width: 120px;
+  border: 0;
+  margin: 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-danger{
+  background-color: rgb(230, 42, 42);
+  color: #ffff;
+  height: 35px;
+  width: 100px;
+  border: 0;
+  margin: 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
